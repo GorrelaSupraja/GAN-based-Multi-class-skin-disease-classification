@@ -5,7 +5,7 @@ from time import sleep
 import numpy as np
 import pandas as pd
 from PIL import Image
-import tensorflow as tf
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from sklearn.preprocessing import LabelEncoder
@@ -15,7 +15,7 @@ import base64
 import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 # Replace this line
-tf.compat.v1.reset_default_graph()
+
 def model_load_bal( image_paths, labels):
     model = load_model('dense.h5')
     
